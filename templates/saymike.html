@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<head>
+		<title>paradox Soundboard</title>
+    </head>
+
+    <body>
+		<img src="/static/steelseries-logo.jpg" alt="Powered by Global Ops" height="50" width="50"></img>
+        <h1>This is my Raspberry Pi, it seems to be working</h1>
+        <h2>The date and time on this Pi is {{ time }} </h2>
+        <p>Select what you want Mike to say below</p>
+		<form method="post">
+			<select name="chat">
+
+				<option value="BigSigh">Big Sigh</option>
+				<option value="casuals">Casuals</option>
+				<option value="disapointed_dude">Dude</option>
+				<option value="every_headshot">Every shot was on that guy's head</option>
+				<option value="fuckin_worthless" disabled>(NSFW) People are f**** worthless</option>
+				<option value="fuckyoudoin" disabled>(NSFW) F*** are you doin?</option>
+				<option value="GamesTerrible">Game's terrible</option>
+				<option value="hmm_question">Hmm?</option>
+				<option value="ideal_solution">Ideal Solution</option>
+				<option value="Laughter">Laughter</option>
+				<option value="noicant">No I can't</option>
+				<option value="nope">Nope</option>
+				<option value="rather_bot">I'd rather have a bot</option>
+				<option value="refuse">I refuse to play with random people</option>
+				<option value="retard">That guy plays like a retard</option>
+				<option value="SIGH">Nope</option>
+				<option value="suckindick" disabled>(NSFW) Suckin' d***</option>
+				<option value="TovMid">That's what I get for Molotovin' mid</option>
+				<option value="wheres_booboy">Alright, where's BooBoy(Brendan)?</option>
+				<option value="whytry">Why are we even trying this?</option>
+				<option value="worst_players" disabled>(NSFW) These are some of the worst players....</option>
+				<option value="YeahYeah">Yeah Yeah</option>
+				<option value="yeahyoudo">Yeah you do</option>
+				<option value="yearsoffmylife" disabled> (NSFW)...take some years off my life</option>
+				<option value="yup">Yup</option>				
+			</select>
+			<input class="button1" type="submit" value="Select">
+		</form>
+
+        <audio controls preload="auto">
+            <source src="/static/sounds/{{ choice }}.mp3" type ="audio/mp3">
+            Your browser does not support the <audio> tag.
+        </audio>
+    </body>
+</html>
